@@ -1,0 +1,25 @@
+{% load static %}
+<script src="{% static 'video_streaming_app/js/index.js' %}"></script>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Record Video from Webcam</title>
+  <style>
+    video {
+      width: 640px;
+      height: 480px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Record Video from Webcam</h1>
+  <video id="video" autoplay></video>
+  <canvas id="canvas" style="display:none;"></canvas>
+  <br>
+  <button id="startRecord" style="background-color: #4CAF50; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer;">Start Recording</button>
+  <button id="stopRecord" style="background-color: #f44336; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer;">Segment and Upload Recording</button>
+  <button id="playRecord" style="background-color: #008CBA; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer;">Play Recording</button>
+  <script src="../static/video_streaming_app/js/index.js"></script>
+</body>
+</html>

@@ -19,4 +19,6 @@ from . import views
 
 urlpatterns = [
     path('', views.index, name='index'),
+    path('record_video', views.record_video, name='record_video'),
+
 ]
